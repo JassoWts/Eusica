@@ -1,0 +1,31 @@
+body{
+	background-color: #15172b;
+}
+
+
+
+.mb-3row{
+	width: 640px;
+	position: relative;
+    top: 15px; left: 385px;
+
+}
+
+.inputsDesplegables{
+	width: 650px;
+}
+
+
+.col-sm-2{
+	color: #eee;
+}
+
+.botonEnviar{
+	position: relative;
+
+	
+}
+
+.btn-btn-outline-secondary-dropdown-toggle{
+	color: #000;
+}

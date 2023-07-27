@@ -1,0 +1,176 @@
+body{
+	background-color: rgb(202, 201, 201);
+}
+header{
+	background-color: #eee;
+} 
+
+.container{
+	max-width: 98rem;
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-block: 1.5rem;
+}
+
+.nav-list{
+	position: relative;
+	display: flex;
+	list-style: none;
+}
+
+.nav-item{
+	min-width: 10rem;
+	text-align: center;
+	padding-block: 1rem;
+}
+
+.nav-link{
+	text-transform: uppercase;
+	color: #000;
+}
+
+.active{
+	position: absolute;
+	bottom: -1rem;
+	height: 2px;
+	width: 10rem;
+	background-color: #000;
+	transition: transform 0.25s;
+}
+
+.nav-item:nth-child(2):hover ~ .active{
+	transform: translateX(10rem);
+}
+
+.nav-item:nth-child(3):hover ~ .active{
+	transform: translateX(20rem);
+}
+
+.nav-item:nth-child(4):hover ~ .active{
+	transform: translateX(30rem);
+}
+
+.nav-item:nth-child(5):hover ~ .active{
+	transform: translateX(40rem);
+}
+
+.nav-item:nth-child(6):hover ~ .active{
+	transform: translateX(50rem);
+}
+
+.nav-item:nth-child(7):hover ~ .active{
+	transform: translateX(60rem);
+}
+
+/* lo de arriba es el estilo de la barra de navegacion 
+
+.col-sm-10{
+	width: 650px;
+}
+
+.inputsDesplegables{
+	width: 650px;
+}
+
+
+.col-sm-2{
+	color: #eee;
+}
+
+.botonEnviar{
+	position: relative;
+
+	
+}
+
+.btn-btn-outline-secondary-dropdown-toggle{
+	color: #000;
+}
+*/
+
+
+
+.notification{
+
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: max-content;
+  padding: 20px 15px;
+  border-radius: 4px;
+  background-color: #141619;
+  color: #f6f5f9;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  animation: fade-in 4s linear forwards;
+}
+
+.notification_progress{
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-image: linear-gradient( to right, #539bdb, #3250bf);
+  border-radius: inherit;
+  animation: load 3s 0.25s linear forwards;
+}
+
+@keyframes fade-in{
+  
+    5%{
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes load{
+  to{
+    transform: scaleX(1);
+  }
+}
+
+.logoimage{
+	position: relative;
+	left: 380px;
+	top: 150px;
+}
+
+#texto1{
+	box-shadow: -1px 1px 7px 0px #000000;
+    border-radius: 4px;
+	
+	font-size: 22px;
+}
+
+#texto2{
+	box-shadow: -1px 1px 7px 0px #000000;
+    border-radius: 4px;
+	
+	font-size: 22px;
+}
+
+.foot{
+    background-color: #3c3a3f;
+}
+.textof
+{
+	color: white;
+	font-size: 30px;
+	text-align: 50%;
+}
